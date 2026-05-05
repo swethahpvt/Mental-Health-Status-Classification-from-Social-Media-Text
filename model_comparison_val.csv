@@ -1,3 +1,0 @@
-Model,Val Accuracy,Val F1 (macro)
-TF-IDF + SVM,0.8243,0.8233
-BERT (fine-tuned),0.8427,0.843
