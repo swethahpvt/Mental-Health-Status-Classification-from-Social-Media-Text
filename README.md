@@ -91,9 +91,9 @@ The project addresses the complete data science lifecycle including:
 
 ---
 
-### 3. Model Evaluation *(Member C — Arun)*
+### 3. Model Evaluation
 
-- Loaded saved predictions from Member B
+- Loaded saved predictions
 - Computed per-class sensitivity, specificity, precision, and F1-score
 - Generated confusion matrices for both models
 - Compared BERT vs SVM performance
