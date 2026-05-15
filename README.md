@@ -6,7 +6,7 @@
 | --- | --- | --- |
 | [Member A Name] | [Reg No] | [Course] |
 | [Member B Name] | [Reg No] | [Course] |
-| Arun | [Reg No] | [Course] |
+| Arun P S| 253206 | MSc DataScience and BioAI |
 
 ---
 
@@ -175,3 +175,26 @@ The project addresses the complete data science lifecycle including:
 
 ---
 
+## Conclusion
+
+This project demonstrates that NLP models, particularly fine-tuned BERT, can classify mental health conditions from social media text with strong accuracy (85.7%). The system shows real potential as an early intervention tool to flag at-risk posts for human review. However, accuracy alone is not sufficient for real-world deployment — ethical safeguards, human oversight, and data privacy protections are essential. BERT outperforms the SVM baseline by 3.5% across all metrics, with the most significant gains in the anxiety and normal categories.
+
+---
+
+## Repository Structure
+
+```
+Mental-Health-Status-Classification-from-Social-Media-Text/
+│
+├── Comparison_code.ipynb         # Member C: evaluation notebook
+├── Model_Building.ipynb          # Member B: model training notebook
+├── code.ipynb                    # Member A: preprocessing notebook
+├── confusion_matrices.png        # Member C: confusion matrix plots
+├── evaluation_summary.csv        # Member C: accuracy and F1 summary
+├── discussion.md                 # Member C: ethical risks and use cases
+├── model_comparison_val.csv      # Member B: validation comparison
+├── y_pred_bert.npy               # Member B: BERT predictions
+├── y_pred_svm.npy                # Member B: SVM predictions
+├── y_test.npy                    # Member B: true test labels
+└── README.md
+```
