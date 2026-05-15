@@ -112,3 +112,66 @@ The project addresses the complete data science lifecycle including:
 
 ---
 
+
+## Model Performance Summary
+
+### TF-IDF + SVM
+
+1. **Accuracy:** 82.2%
+2. **Macro F1:** 0.821
+3. **Strengths:** Fast training, interpretable, works well with high-dimensional sparse text features.
+4. **Weakest Class:** Normal (73% recall — many normal posts misclassified as depression or anxiety)
+
+### BERT (fine-tuned)
+
+1. **Accuracy:** 85.7%
+2. **Macro F1:** 0.857
+3. **Strengths:** Understands sentence context and nuance. Biggest improvement over SVM in anxiety and normal classes.
+4. **Weakest Class:** Normal (81% recall — improved significantly over SVM)
+
+---
+
+## Per-Class Confusion Matrix Results
+
+### SVM Confusion Matrix
+
+| Actual \ Predicted | Depression | Anxiety | PTSD | Normal |
+| --- | --- | --- | --- | --- |
+| **Depression** | 450 | 17 | 23 | 25 |
+| **Anxiety** | 27 | 416 | 33 | 39 |
+| **PTSD** | 12 | 10 | 453 | 40 |
+| **Normal** | 52 | 49 | 40 | 374 |
+
+### BERT Confusion Matrix
+
+| Actual \ Predicted | Depression | Anxiety | PTSD | Normal |
+| --- | --- | --- | --- | --- |
+| **Depression** | 446 | 33 | 10 | 26 |
+| **Anxiety** | 15 | 458 | 14 | 28 |
+| **PTSD** | 7 | 29 | 441 | 38 |
+| **Normal** | 30 | 50 | 15 | 420 |
+
+---
+
+## Evaluation Files
+
+| File | Description |
+| --- | --- |
+| `Comparison_code.ipynb` | Full evaluation notebook with metrics and charts |
+| `confusion_matrices.png` | Side-by-side SVM and BERT confusion matrix heatmaps |
+| `evaluation_summary.csv` | Accuracy and F1 comparison table |
+| `discussion.md` | Write-up on early intervention use cases and ethical risks |
+
+---
+
+## Ethical Considerations
+
+- Social media users did not explicitly consent to mental health classification
+- Misclassification of normal posts can lead to unnecessary stigmatization
+- Training data may be biased toward certain demographics or cultural backgrounds
+- Risk of misuse for surveillance by employers or governments
+- Model should only assist human reviewers — never replace clinical diagnosis
+- Full discussion available in `discussion.md`
+
+---
+
