@@ -198,3 +198,17 @@ Mental-Health-Status-Classification-from-Social-Media-Text/
 ├── y_test.npy                    # Member B: true test labels
 └── README.md
 ```
+
+## 🚀 Deployment
+
+The app is live at:
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mental-health-status-classification-from-social-media-text-8cs.streamlit.app/)
+
+🔗 https://mental-health-status-classification-from-social-media-text-8cs.streamlit.app/
+
+## 🖥️ App Preview
+
+![Home Page](images/homepagep3.png)
+
+
