@@ -203,9 +203,7 @@ Mental-Health-Status-Classification-from-Social-Media-Text/
 
 The app is live at:
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mental-health-status-classification-from-social-media-text-8cs.streamlit.app/)
-
-🔗 https://mental-health-status-classification-from-social-media-text-8cs.streamlit.app/
+🔗 [Click here to open the app](https://mental-health-status-classification-from-social-media-text-8cs.streamlit.app/)
 
 ## 🖥️ App Preview
 
