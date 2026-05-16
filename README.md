@@ -14,10 +14,14 @@
 
 | Member | Role |
 |--------|------|
-| Swetha Babu | Responsible for data collection and preprocessing pipeline. Collected Reddit posts from depression, anxiety, PTSD, and normal 
-subreddits for dataset creation. Performed text cleaning including removal of URLs, special characters, and stopwords. Anonymized data 
-to remove personally identifiable information. Handled ethical and privacy considerations throughout the data collection process. 
-Produced the cleaned labeled dataset as output for downstream model training and evaluation.|
+| Swetha Babu | Responsible for data collection and preprocessing pipeline. 
+Collected Reddit posts from depression, anxiety, PTSD, and normal 
+subreddits for dataset creation. Performed text cleaning including 
+removal of URLs, special characters, and stopwords. Anonymized data 
+to remove personally identifiable information. Handled ethical and 
+privacy considerations throughout the data collection process. 
+Produced the cleaned labeled dataset as output for downstream 
+model training and evaluation.|
 | Sebin George | Responsible for model building and training pipeline development. Implemented a baseline machine learning model using TF-IDF vectorization combined with Support Vector Machine (SVM) for text classification. Developed and fine-tuned a BERT-based sequence classification model for improved contextual understanding of mental health-related text. Performed stratified train-test splitting to ensure balanced class distribution across depression, anxiety, PTSD, and normal categories. Trained and validated both SVM and BERT models, then generated and saved prediction outputs as y_pred_svm.npy and y_pred_bert.npy for downstream evaluation. Managed preprocessing, tokenization, feature extraction, and model training workflows. Exported trained model artifacts and prediction files for integration with the evaluation and comparison module. |
 | Arun | Responsible for model evaluation and comparison. Loaded trained model outputs (y_test.npy, y_pred_svm.npy, y_pred_bert.npy) and performed comprehensive evaluation of both SVM and BERT models. Computed per-class metrics including sensitivity (recall), specificity, precision, and F1-score for all four categories — depression, anxiety, PTSD, and normal — using sklearn's classification_report. Generated side-by-side confusion matrix heatmaps for visual comparison of both models and saved them as confusion_matrices.png. Produced an evaluation summary table (evaluation_summary.csv) comparing both models on Accuracy, Macro F1, and Weighted F1. BERT achieved 85.7% accuracy vs SVM's 82.2%, with BERT showing the most improvement in the anxiety and normal classes. Authored a detailed discussion write-up (discussion.md) covering early intervention use cases and ethical risks including misclassification harm, privacy concerns, data bias, and surveillance misuse. Uploaded all evaluation files to the GitHub repository. |
 
